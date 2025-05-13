@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>YouTube Video Downloader</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header-controls">
+      <button id="themeToggleBtn" aria-label="Toggle theme">🌓</button>
+    </div>
+    <h1>YouTube Video Downloader</h1>
+    <div class="input-group">
+      <input id="youtubeLink" placeholder="Paste video link here"/>
+      <button id="fetchVideoInfoBtn">Get Video Info</button>
+    </div>
+    <div id="videoInfo" class="hidden">
+      <img id="videoThumbnail" alt="Video thumbnail"/>
+      <h2 id="videoTitle"></h2>
+      <div class="options">
+        <select id="resolutionSelect"></select>
+        <button id="downloadBtn">Download</button>
+      </div>
+    </div>
+    <div id="statusMessage"></div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
