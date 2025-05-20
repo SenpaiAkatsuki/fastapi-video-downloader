@@ -28,13 +28,13 @@ A simple video downloader service built with FastAPI, allowing user to fetch and
    pip install --upgrade pip
    pip install -r requirements.txt
 
-2. **Confirm FFmpeg bundle
+2. **Confirm FFmpeg bundle**
    python -c "from imageio_ffmpeg import get_ffmpeg_exe; print(get_ffmpeg_exe())"
 
-3. **Launch the App
+3. **Launch the App**
    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
-4. Use the UI
+4. **Use the UI**
    Open your browser at http://localhost:8000/
 
 
